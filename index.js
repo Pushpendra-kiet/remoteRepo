@@ -15,6 +15,9 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Home Page' });
 });
 
+app.get('/sweets',(req, res) => {
+    res.render('sweets', { title: 'sweets' });
+} )
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
